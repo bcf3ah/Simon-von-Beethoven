@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simon von Beethoven</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+		<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 center-align">
+      <h1 class='center-align'>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        Simon von Beethoven!
+      </h1>
+      <a class="waves-effect waves-light btn btn-floating pulse" id="startButton"><i class="material-icons">play_arrow</i></a>
+      <h4 class='center-align'>Level: <span id="level">1</span></h4>
+      <!-- Piano -->
+      <div id="piano">
+        <div id="piano-container">
+          <li>
+            <div class="white one" id="1">
+            </div>
+            <div class="black">
+            </div>
+          </li>
+          <li>
+            <div class="white two" id="2">
+            </div>
+            <div class="black">
+            </div>
+          </li>
+          <li>
+            <div class="white three" id="3">
+            </div>
+            <div class="black">
+            </div>
+          </li>
+          <li>
+            <div class="white four" id="4">
+            </div>
+          </li>
+        </div>
+      </div>
+      <!-- End Piano -->
+    </div>
+  </div>
+</div>
+
+<ul id="slide-out" class="side-nav">
+  <li>
+    <div class="userView">
+      <div class="background">
+        <img src="http://materializecss.com/images/office.jpg" alt="" />
+      </div>
+      <a href="#!user"><img class="circle" src="https://avatars0.githubusercontent.com/u/9892522?v=3&s=200"></a>
+      <a href="#!name"><span class="white-text name">Brian Fitzsimmons</span></a>
+      <a href="#!email"><span class="white-text email">Free Code Camp</span></a>
+    </div>
+  </li>
+  <!-- Strict Mode Switch -->
+  <li><a href="#!">Enable Strict Mode</a></li>
+  <div class="switch" style="margin-left: 32px;">
+    <label>
+      Off
+      <input type="checkbox">
+      <span class="lever" id="strictMode"></span>
+      On
+    </label>
+  </div>
+  <li><a href="#!">Speed</a></li>
+  <div class="switch" style="margin-left: 32px;">
+    <label>
+      Normal
+      <input type="checkbox">
+      <span class="lever" id="difficulty"></span>
+      Fast
+    </label>
+  </div>
+  <li><a href="#!" class='btn waves-effect waves-dark' id="reset">Reset</a></li>
+</ul>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.3/howler.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+		<script src="index.js"></script>
+  </body>
+</html>
